@@ -1,0 +1,7 @@
+<p><strong>Design Cart News</strong> is a Joomla module for displaying articles in a flexible, grid-based layout with full control over content, structure, and styling.</p>
+<p>The module allows selecting specific categories, filtering featured articles, and limiting the number of displayed items. It provides configurable layout options such as column-based grid, image position (top or left), and adjustable image proportions and container width.</p>
+<p>Each content element can be independently enabled or disabled, including title, intro text, tags, image, and "read more" button. The module also supports custom heading levels (H1&ndash;H6) for better semantic structure and SEO.</p>
+<p>The appearance can be fully customized directly from the module settings, including typography (size, weight, uppercase), colors (text, background, hover states), and card styling, without the need to modify template CSS.</p>
+<p>The module is designed to be predictable for developers, easy to configure for administrators, and visually consistent for end users.</p>
+<p>Project page:<br/> <a href="https://www.designcart.pl/laboratorium/318-jak-wyswietlic-newsy-na-stronie-startowej-joomla.html">https://www.designcart.pl/laboratorium/318-jak-wyswietlic-newsy-na-stronie-startowej-joomla.html</a></p>
+<p>Author:<br/> Paweł Nosko &ndash; <a href="https://www.designcart.pl/pawel-nosko.html">https://www.designcart.pl/pawel-nosko.html</a></p>
