@@ -1,0 +1,176 @@
+.mod-dc-news {
+    width: 100%;
+}
+
+.mod-dc-news__grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(var(--dc-news-columns, 3), minmax(0, 1fr));
+}
+
+.mod-dc-news__item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.85rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding:15px;
+    overflow: hidden;
+    background: var(--dc-news-item-bg, #fff) !important;
+}
+
+.mod-dc-news__item--img-left {
+    flex-direction: row !important;
+    align-items: stretch;
+}
+
+.mod-dc-news__item--img-left .mod-dc-news__image-link {
+    flex: 0 0 38% !important;
+    max-width: 38%;
+}
+
+.mod-dc-news__item--img-left .mod-dc-news__content {
+    flex: 1 1 auto !important;
+}
+
+.mod-dc-news__image-link {
+    display: block;
+}
+
+.mod-dc-news__image-wrap {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.mod-dc-news__image-wrap--circle {
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+}
+
+.mod-dc-news__image-wrap--ratio-1-1 {
+    aspect-ratio: 1 / 1 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-1-2 {
+    aspect-ratio: 1 / 2 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-2-3 {
+    aspect-ratio: 2 / 3 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-1-3 {
+    aspect-ratio: 1 / 3 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-3-1 {
+    aspect-ratio: 3 / 1 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-3-2 {
+    aspect-ratio: 3 / 2 !important;
+}
+
+.mod-dc-news__image-wrap--ratio-2-1 {
+    aspect-ratio: 2 / 1 !important;
+}
+
+.mod-dc-news__image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+.mod-dc-news__content {
+    padding: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.mod-dc-news__title {
+    margin: 0;
+    color: var(--dc-news-title-color, #111) !important;
+    font-size: var(--dc-news-title-size, 20px) !important;
+    font-weight: var(--dc-news-title-weight, 700) !important;
+    text-transform: var(--dc-news-title-transform, none) !important;
+    line-height: 1.3;
+}
+
+.mod-dc-news__title a {
+    color: var(--dc-news-title-color, #111) !important;
+    text-decoration: none !important;
+}
+
+.mod-dc-news__title a:hover {
+    text-decoration: underline;
+}
+
+.mod-dc-news__intro {
+    color: var(--dc-news-intro-color, #555) !important;
+    font-size: var(--dc-news-intro-size, 15px) !important;
+    font-weight: var(--dc-news-intro-weight, 400) !important;
+    text-transform: var(--dc-news-intro-transform, none) !important;
+    line-height: 1.5;
+}
+
+.mod-dc-news__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.mod-dc-news__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dc-news-tag-color, #fff) !important;
+    background: var(--dc-news-tag-bg, #1e73be) !important;
+    font-size: var(--dc-news-tag-size, 12px) !important;
+    font-weight: var(--dc-news-tag-weight, 600) !important;
+    text-transform: var(--dc-news-tag-transform, none) !important;
+    border-radius: 999px;
+    padding: 0.3rem 0.6rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.mod-dc-news__tag:hover {
+    color: var(--dc-news-tag-color-hover, #fff) !important;
+    background: var(--dc-news-tag-bg-hover, #155a91) !important;
+}
+
+.mod-dc-news__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: var(--dc-news-btn-color, #fff) !important;
+    background: var(--dc-news-btn-bg, #000) !important;
+    font-size: var(--dc-news-btn-size, 14px) !important;
+    font-weight: var(--dc-news-btn-weight, 700) !important;
+    text-transform: var(--dc-news-btn-transform, none) !important;
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 0.45rem 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.mod-dc-news__button:hover {
+    color: var(--dc-news-btn-color-hover, #fff) !important;
+    background: var(--dc-news-btn-bg-hover, #333) !important;
+}
+
+@media (max-width: 991px) {
+    .mod-dc-news__grid {
+        grid-template-columns: repeat(min(var(--dc-news-columns, 3), 2), minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .mod-dc-news__grid {
+        grid-template-columns: 1fr;
+    }
+}
